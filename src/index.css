@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Font ── */
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+
+  /* ── Background layers ── */
+  --color-bg:        #0A0A0A;   /* page base — matches BentoGrid dark:bg-black */
+  --color-surface:   #111111;   /* card / panel backgrounds */
+  --color-overlay:   #1B1C36;   /* radial gradient focal color */
+
+  /* ── Borders ── */
+  --color-border:    rgba(255, 255, 255, 0.10);
+  --color-border-hover: rgba(255, 255, 255, 0.20);
+
+  /* ── Text ── */
+  --color-text-primary:   #f3f4f6;  /* gray-100 */
+  --color-text-secondary: #d1d5db;  /* gray-300 */
+  --color-text-muted:     #9ca3af;  /* gray-400 */
+
+  /* ── Accent ── */
+  --color-accent:       #6366f1;   /* indigo-500 — gradient spot & highlights */
+  --color-accent-muted: rgba(99, 102, 241, 0.21); /* dark:bg gradient tint */
+}
+
+/* Apply font & base text color globally */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
